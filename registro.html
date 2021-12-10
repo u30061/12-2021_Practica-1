@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+    <div class="contenido">
+        <h2 class="titulo">REGISTRO</h2>
+
+        <form action="/action_page.php">
+            <div class="campos">
+                <label><b>Nombre completo</b></label>
+                <input type="text" id="nombre-completo" name="nombre" placeholder="escriba su nombre" required>
+
+                <label><b>Email</b></label>
+                <input type="text" id="email" name="email" placeholder="ingrese email" required>
+
+                <label><b>Contrasenia</b></label>
+                <input type="password" id="password-registro" name="password" placeholder="ingrese su contrasenia"
+                    required>
+
+                <label><b>Repetir contrasenia</b></label>
+                <input type="password" id="password-registro-repetir" placeholder="ingrese su contrasenia, otra vez"
+                    required>
+
+                <p>Para crear una cuenta debe aceptar nuestros <a href="#">terminos de servicio.</a>.</p>
+                <input type="button" class="boton-registrar" onclick="registro()" value="Registrar">
+
+            </div>
+
+            <div class="campos registrar">
+                <p>Ya tiene una cuenta? <a href="./ingreso.html">Ingrese</a>.</p>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
